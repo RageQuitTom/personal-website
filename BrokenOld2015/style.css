@@ -1,0 +1,102 @@
+#nomargin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#googleMap{
+	z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#overlay{
+	z-index: 10;
+	position: absolute;
+	width: 295px;
+	height: 670px;
+	top:30px;
+	right: 32px;
+	font-family: "Arial";
+	font-size: 22px;
+	color:red;
+border-style: solid;
+border-width: 87px 96px 79px 79px;
+-moz-border-image: url(Border6.png) 87 96 79 79 stretch;
+-webkit-border-image: url(Border6.png) 87 96 79 79 stretch;
+-o-border-image: url(Border6.png) 87 96 79 79 stretch;
+border-image: url(Border6.png) 87 96 79 79 fill stretch;
+}
+#navoverlay{
+	z-index: 10;
+	position: absolute;
+	width: 315px;
+	height: 85px;
+	bottom:5px;
+	left: 5px;
+	font-family: "Arial";
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 17px;
+	color:#199ABA;
+border-style: solid;
+border-width: 87px 96px 79px 79px;
+-moz-border-image: url(Border6.png) 87 96 79 79 stretch;
+-webkit-border-image: url(Border6.png) 87 96 79 79 stretch;
+-o-border-image: url(Border6.png) 87 96 79 79 stretch;
+border-image: url(Border6.png) 87 96 79 79 fill stretch;
+}
+#heading{
+	z-index:10;
+	font-size:34px;
+	color:red;
+	text-align:center;
+}
+#navheading{
+	font-size:22px;
+	color:#199ABA;
+	text-align: left;
+	z-index:10;
+}
+#ebayapi{
+	z-index:10;
+	position: absolute;
+	width:300px;
+	font-size:15px;
+	display:table;
+    margin:0 auto;
+}
+#button{
+	z-index:10;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 125px;
+	height: 5px;
+	border-style: solid;
+	border-width: 0px 96px 79px 10px;
+	-moz-border-image: url(dark_grey_glass_button.png) 87 96 79 79 stretch;
+	-webkit-border-image: url(dark_grey_glass_button.png) 87 96 79 79 stretch;
+	-o-border-image: url(dark_grey_glass_button.png) 87 96 79 79 stretch;
+	border-image: url(dark_grey_glass_button.png) 87 96 79 79 fill stretch;
+
+}
+#twitterfeed{
+	z-index: 10;
+	position: absolute;
+	width: 240px;
+	height: 450px;
+	top:100px;
+	left: 5px;
+	font-family: "Arial";
+	font-size: 22px;
+	color:red;
+border-style: solid;
+border-width: 87px 96px 79px 79px;
+-moz-border-image: url(Border6.png) 87 96 79 79 stretch;
+-webkit-border-image: url(Border6.png) 87 96 79 79 stretch;
+-o-border-image: url(Border6.png) 87 96 79 79 stretch;
+border-image: url(Border6.png) 87 96 79 79 fill stretch;
+
+
+}

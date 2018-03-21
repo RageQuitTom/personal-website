@@ -1,0 +1,48 @@
+#noborder{
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+}
+
+#imagecolumn{
+   position: fixed;
+   right: 0px;
+   top: 60px;
+   height: 100%;
+   width: 40%;
+
+}
+#textbodydiv{
+	position: absolute;
+	left: 250px;
+	right:250px;
+	height: 1400px;
+	top: 60px;
+
+
+}
+#imageblock{
+	display:block
+
+}
+#largeheadertext{
+	font-size: 34px;
+	font-family: "Arial";
+	color: blue;
+
+}
+#align-left{
+text-align: left;
+
+
+}
+.align-right{
+text-align: right;
+font-weight: bold;
+
+
+
+}
+#align-centre{
+text-align: center;
+}
