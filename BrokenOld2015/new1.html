@@ -1,0 +1,47 @@
+
+<html>
+<head>
+<title>My Page</title>
+<link rel="stylesheet" type="text/css" href="script.css">
+<script>
+submitForms = function(){
+    document.forms["sendoptions"].submit();
+}
+</script>
+</head>
+<body>
+<form name="sendoptions" class="leftform" action="script.php" method="post">
+<div><br>
+<label><input type="checkbox" name="option[]" value="Ark">Ark</label><br>
+<label><input type="checkbox" name="option[]" value="KAlarm">KAlarm</label><br>
+<label><input type="checkbox" name="option[]" value="KCalc">KCalc</label><br>
+<label><input type="checkbox" name="option[]" value="KCharSelect">KCharSelect</label><br>
+<label><input type="checkbox" name="option[]" value="KFloppy">KFloppy</label><br>
+<label><input type="checkbox" name="option[]" value="KGpg">KGpg</label><br>
+<label><input type="checkbox" name="option[]" value="KJots">KJots</label><br>
+<label><input type="checkbox" name="option[]" value="KMag">KMag</label><br>
+<label><input type="checkbox" name="option[]" value="KMouseTool">KMouseTool</label><br>
+<label><input type="checkbox" name="option[]" value="KMouth">KMouth</label><br>
+<label><input type="checkbox" name="option[]" value="KNotes">KNotes</label><br>
+<label><input type="checkbox" name="option[]" value="KPilot">KPilot</label><br>
+<label><input type="checkbox" name="option[]" value="KTimeTracker">KTimeTracker</label><br>
+<label><input type="checkbox" name="option[]" value="KTimer">KTimer</label><br>
+<label><input type="checkbox" name="option[]" value="KWrite">KWrite</label><br>
+<label><input type="checkbox" name="option[]" value="Okteta">Okteta</label><br>
+<label><input type="checkbox" name="option[]" value="Workrave">Workrave</label><br>
+<label><input type="checkbox" name="option[]" value="Xwrits">Xwrits</label><br>
+</div>
+</form>
+
+<div class="infobar">
+<h9>RHEL Software Survey</h9>
+</div>
+<div class="textbar">
+<headingsmall>Please select all accessory software you use as part of your day to day work</headingsmall>
+<br/><br/><br/>
+<para> This is a study being performed by ...... in order to identify any redundant software packages installed on the linux estate before we move operating systems from RHEL6 to RHEL7</para>
+</div>
+<a href='#' class='button' onclick="submitForms()">Submit Data</a>
+
+</body>
+</html>

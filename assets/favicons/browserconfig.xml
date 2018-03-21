@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="var/www/assets/favicons/mstile-70x70.png?v=jwwb980qGe"/>
+      <square150x150logo src="var/www/assets/favicons/mstile-150x150.png?v=jwwb980qGe"/>
+      <square310x310logo src="var/www/assets/favicons/mstile-310x310.png?v=jwwb980qGe"/>
+      <wide310x150logo src="var/www/assets/favicons/mstile-310x150.png?v=jwwb980qGe"/>
+      <TileColor>#00aba9</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>

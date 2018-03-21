@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="map.js">
+initialize();
+</script> 
+</head>
+
+<body>
+<div id="googleMap"></div>
+<div id="overlay">
+	<h1 id="heading"> Battles of the English Civil War</h1>
+	<img src="civilwarbanner.jpeg" height="125" width="300">
+<div id = "ebayapi">
+<script>
+function _cb_findItemsByKeywords(root)
+{
+  var items = root.findItemsByKeywordsResponse[0].searchResult[0].item || [];
+  var html = [];
+  html.push('<table width="100%" border="0" cellspacing="0" cellpadding="3"><tbody>');
+
+  for (var i = 0; i < items.length; ++i)  
+  {
+    var item     = items[i];
+    var title    = item.title;
+    var pic      = item.galleryURL;
+    var viewitem = item.viewItemURL;
+
+    if (null != title && null != viewitem)
+    {
+      html.push('<tr><td>' + '<img src="' + pic + '" border="0">' + '</td>' + 
+        '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td></tr>');
+    }
+  }
+  html.push('</tbody></table>');
+  document.getElementById("ebayapi").innerHTML = html.join("");
+}
+</script>
+
+<!--
+Use the value of your appid for the appid parameter below.
+-->
+<script src=ebayJSON.xml>
+</script>
+</div>
+</div>
+</body>
+
+</html>

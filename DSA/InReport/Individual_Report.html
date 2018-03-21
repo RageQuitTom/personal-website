@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html id = "noborder">
+<head>
+  <meta charset="UTF-8">
+  <title>Individual Project Report</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id= "textbodydiv">
+	<h1 id = "largeheadertext">Build and integrate a "monetizing" widget using the EBay API</h1>
+	<p class="align-right"> Word Count: ~1087</p>
+	<p class="align-right"> Thomas Horseman 13013711</p>
+	<br />
+	<h3>Why I chose this task:</h3>
+	<p>The main reason I chose this individual task is that I really liked manipulating the Google maps API and coming up with ideas for how the civil war html should be formatted. I enjoyed the prospect of having to work with a brand new API and seeing what I could do with it. The objectives of this task were very different to those of the group task, as I had to take monetization into account wherever possible, an attribute that wasn't needed in the group work. I considered this task to have the right balance of both relation to previous tasks, and the option for knowledge development in a different API. To use the eBay API, I had to become a member of their developer program, which offered tutorials to help me get to grips with the basics of the application programming interface.</p>
+	<h3>How I did it:</h3>
+	<p>My solution was split into two parts:</p>
+	<ol>
+		<li>Construct a call to the eBay services server in order to receive a valid response (function constructXMLCalleBay)</li>
+		<li>Receive data back from this request and format it on the html page (function eBayQuery)</li>
+	</ol>
+	<p>The first part involved constructing a query in an xml format that the eBay server could understand and generate a response to. This query includes a set of parameters to be included in the search results and in this case was equal to "English civil war". The XML was then combined with eBay http headers that included data such as what kind of service we are requesting, from what countries store we wish to query and developer application numbers to validate myself. All of this data was then combined and fed into a cURL request (a method of sending data with URL syntax), with the eBay servers response xml recorded for the second function. The majority of this code was made available to me through the eBay developer programs tutorial.</p>
+	<p>The second part of my solution took the eBay response xml and looped through it, identifying the pictures, links and titles of the products. This stored the information in their own variables, which could be used in a html format to display their values.</p>
+	<h3>Problems I Encountered:</h3>
+	<p>Whilst developing the widget I had lots of trouble with PHP errors that stopped the scripts from compiling at the server end, causing blank web pages to be sent to the client. To solve this, I went through the source code, manually commenting lines to find the offending line, then researching why this code may be throwing errors. In reflection, this was a majorly inefficient process that should have been evaluated at the time. This was largely due to the fact I hadn't yet implemented an error handling function, which was a design oversight that was later added towards the end of the project. In evaluation, this was too late in the project to have any positive effect.</p>
+	<p>I also had a problem in that the resultant eBay product photos could be in either landscape or portrait format and in the latter format would cause the div box to extend beyond the border, making the site look less professional. I was able to solve this problem by stating fixed sizes for this specific div tag through CSS id's as well as the overflow CSS attribute. In evaluation, a better way of solving this problem would be to ensure the border is a closer fit to the div and is able to dynamically adjust to its contents, or just ensure that only landscape pictures of products are selected in the eBay search query.</p>
+	<p>The majority of my individual project work was done at home, hosted on my home server, which led to problems when I tried reintegrating the system onto the CEMS network. After consulting  resources available on the blackboard service, I deemed the reason for not receiving any response from numerous eBay calls down to the UWE firewall, using a proxy helped solve this problem. The proxy allowed for me to call and receive a response from the eBay servers.</p>
+	<p>For the future, there is always the risk that the version of the API I am using will become outdated and unsupported, or even be taken offline completely, so there would be some degree of maintenance needed to ensure the websites upkeep, however this would be more relevant in industry, than this project.</p>
+	<h3>Monetization:</h3>
+	<p>The solution I have created is able to monetise page views in couple of different ways.</p>
+	<p>One method of monetisation is using referral advertising websites, for example &#39;adf.ly&#39;. These sites earn money through a user pressing a link on your site, presenting them with an advert and the choice to &#39;skip&#39;. Each one of these advert viewings generates a small amount of revenue for the account owner. This implementation would be ideal for a site with a high user count, as revenue per advert is relatively low. This can be implemented easily as these sites provide you with various scripts that can be used to change all hyperlink destinations to an adf.ly URL.</p>
+	<p>Another way of monetising my solution is by becoming/contacting a seller of English Civil War memorabilia and using a set of keywords unique to their/ your products. Referral fees can be asked from the seller in the case of a sale. Matching these keywords to the search keywords in the source code will allow your products to appear in the eBay product banner on the site. This monetisation scenario would be better for lower user count websites, as profit margins are in the control of the eBay account owner, with no third party company affecting revenues as it would with the previous monetisation option. A similar option to this would be to hyperlink directly to a retailers page.</p>
+	<h3>Improvements For Next Time:</h3>
+	<p>If I was to revisit this task, I would make the eBay widget more interactive to the user, through the use of JavaScript. For example one possible change could be the option to press a button that loads more products into the same page,  without having to reload the page html. This could be accomplished through use of the JavaScript version of the eBay API, where I am currently using PHP.</p>
+	<p>I could also give the user access to the query variable through the use of a html form and submit button, allowing the user to change the eBay query terms and hence changing the search results to fit their needs.</p>
+</div>
+</body>
+
+</html>
